@@ -1,0 +1,30 @@
+clc;
+close all;
+clear all;
+
+%% Funções
+
+
+fat = myFactorial(6)
+
+fat
+
+function fat = myFactorial(x)
+
+    v = x;
+    aux = 1;
+    if x == 0
+        fat = 1;
+    end
+
+    if v ~= 0
+        aux = factorial(x) * factorial(x - 1);
+        v = v - 1
+    end
+    
+
+    fat = aux;
+    
+
+end
+
